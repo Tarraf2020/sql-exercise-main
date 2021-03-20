@@ -38,4 +38,21 @@
           on e.company = c.name 
           where e.role like 'Graphic Designer';
 
-4- 
+*************************************
+
+count and filter
+
+
+1- select name from students
+          where points = (select max(points) from students);
+
+2- select avg(points) from students ;
+
+3- select count(name) from students
+          where points = 500;
+
+4- select name FROM students
+          where name like '%s%' ;
+
+5- select name,points from students
+          order by points asc;
