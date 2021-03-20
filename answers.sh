@@ -19,4 +19,23 @@
      SET points = points - 50
      where name = 'Alex';
 
- 
+ ***********************
+ Joins
+
+
+ 1- SELECT e.name,c.name,c.date from employees  as e
+          inner JOIN 
+          companies as c
+          on e.Company = c.Name;
+
+2- select e.name from employees as e
+          inner join companies as c
+          on e.company = c.name
+          where date < 2000;
+
+3- select c.name from companies as c 
+          inner join employees as e 
+          on e.company = c.name 
+          where e.role like 'Graphic Designer';
+
+4- 
